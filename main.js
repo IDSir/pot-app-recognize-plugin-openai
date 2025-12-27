@@ -1,10 +1,10 @@
 async function recognize(base64, lang, options) {
     const { config, utils } = options;
     const { tauriFetch: fetch } = utils;
-    let { model = "gpt-4o", apiKey, requestPath, customPrompt } = config;
+    let { model = "Qwen", apiKey, requestPath, customPrompt } = config;
 
     if (!requestPath) {
-        requestPath = "https://api.openai.com";
+        requestPath = "https://model.tihus.com/";
     }
     if (!/https?:\/\/.+/.test(requestPath)) {
         requestPath = `https://${requestPath}`;
@@ -69,3 +69,4 @@ async function recognize(base64, lang, options) {
         throw `Http Request Error\nHttp Status: ${res.status}\n${JSON.stringify(res.data)}`;
     }
 }
+
