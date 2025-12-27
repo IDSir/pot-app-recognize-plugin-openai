@@ -10,7 +10,7 @@
       "display": "模型",
       "type": "select",
       "options": {
-        "Qwen3-VL": "Qwen3-VL-32B-Instruct"
+        "Qwen3-VL": "Qwen3/Qwen3-VL-32B-Instruct"
       }
     },
     {
@@ -63,5 +63,6 @@
     "uk": "Ukrainian"
   }
 }
+
 
 
