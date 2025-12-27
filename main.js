@@ -1,7 +1,7 @@
 async function recognize(base64, lang, options) {
     const { config, utils } = options;
     const { tauriFetch: fetch } = utils;
-    let { model = "Qwen-VL", apiKey, requestPath, customPrompt } = config;
+    let { model = "Qwen", apiKey, requestPath, customPrompt } = config;
 
     if (!requestPath) {
         requestPath = "https://model.tihus.com/";
@@ -69,5 +69,6 @@ async function recognize(base64, lang, options) {
         throw `Http Request Error\nHttp Status: ${res.status}\n${JSON.stringify(res.data)}`;
     }
 }
+
 
 
